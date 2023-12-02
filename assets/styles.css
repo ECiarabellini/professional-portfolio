@@ -1,6 +1,6 @@
 :root {
-    --accent-color: #3cb1ab   ;
-    --dark: #234664;
+    --accent-color: #ecc8af    ;
+    --dark: #333d47;
   }
 
 body {
@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f2f8e9;
+    background-color: #dbd3d8;
 }
 
 header {
