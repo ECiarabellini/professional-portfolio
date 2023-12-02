@@ -39,6 +39,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 File reset.css copied from 28-Stu_Mini-Project in class coursework found ![here](https://git.bootcampcontent.com/Michigan-State-University/MSU-VIRT-FSF-PT-11-2023-U-LOLC)
 
+Photo by <a href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
 ## License
 
 MIT License
