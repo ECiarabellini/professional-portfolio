@@ -2,11 +2,6 @@
     --accent-color: #3cb1ab   ;
     --dark: #234664;
   }
-  
-* {
-    /* border: 1pt solid rebeccapurple; */
-
-}
 
 body {
     font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,7 +84,6 @@ main {
     margin-right: 5%;
 }
 
-
 #about-me-text {
     margin-right: 5%;
 }
@@ -157,7 +151,6 @@ a[href*="sign-up-form"] {
     align-items: center;
     justify-content: space-around;
     font-size: 150%;
-
 }
 
 #contact-me-links a {
@@ -179,6 +172,7 @@ footer{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        padding-right: 5%;
     }
     
     #my-name{
@@ -194,6 +188,7 @@ footer{
         margin-left: 10px;
         font-size: 110%;
     }
+
     
     /* greeting section only appears in desktop size view */
     #greeting {
@@ -266,7 +261,6 @@ footer{
         justify-self: right;
         padding-right: 10%;
         text-align: right;
-
     }
 
     #contact-me-links a {
