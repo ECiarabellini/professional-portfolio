@@ -171,6 +171,8 @@ a[href*="sign-up-form"] {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 120%;
+
 }
 
 #contact-me-links a {
@@ -211,7 +213,8 @@ footer{
     main{
         display: grid;
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: repeat(6, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
+        grid-template-rows: repeat(3, 4fr) 1fr 1fr;
     }
 
     #about-me{
@@ -226,7 +229,7 @@ footer{
 
     #work{
         grid-column: 1/2 ;
-        grid-row: 2/6; 
+        grid-row: 2/5; 
     }
 
     #work-grid {
@@ -234,19 +237,25 @@ footer{
         grid-row: 2/6; 
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(4, 200px);
+        /* grid-template-rows: repeat(4, max(200px, 1fr)); */
         gap: 2%;
     }
+/* make this card the largest and on top */
+    a[href*="landing-page"] {
+        grid-column: 1 / -1;
+        grid-row: 1 / 3;
+    }
+    
 
     #contact-me {
         grid-column: 1/2 ;
-        grid-row: 6/7;
-
+        grid-row: 5/6;
     }
 
     #contact-me-links{
         grid-column: 2/3 ;
-        grid-row: 6/7;
+        grid-row: 5/6;
     }
     
     #about-me,
@@ -257,11 +266,7 @@ footer{
 
     }
 
-    /* make this card the largest and on top */
-    a[href*="landing-page"] {
-        grid-column: 1 / -1;
-        grid-row: 1 / 3;
-    }
+    
 
     #contact-me-links a {
         font-size: 130%;
