@@ -94,7 +94,10 @@ main {
     color: var(--dark);
 }
 
-main .section {
+.section-heading,
+.section-content {
+    /* padding-right: 1%;
+    margin-right: 1%; */
     margin-top: 4%;
     margin-bottom: 2%; 
     margin-left: 5%;
@@ -102,14 +105,14 @@ main .section {
 }
 
 
-.section-heading {
-    padding-right: 1%;
-    margin-right: 1%;
-}
-
-
 #about-me-text {
     margin-right: 5%;
+}
+
+p{
+    margin-top: 3%;
+    line-height: 125%;
+    font-size: calc(14px + 0.5vw)
 }
 
 /* work section */
@@ -168,6 +171,8 @@ a[href*="sign-up-form"] {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 120%;
+
 }
 
 #contact-me-links a {
@@ -187,53 +192,88 @@ footer{
 @media screen and (min-width: 992px){
     header {
         display: flex;
-        /* flex: 1; */
         justify-content: space-between;
-    }
-    main,
-    .section{
-        display: flex;
-        flex-direction: column;
-    }
-    main .section {
-        display: flex;
         flex-direction: row;
     }
-    header {
-        flex-direction: row;
-    }
+    
     #my-name{
         padding-right: 2%;
     }
+    
     #header-nav-links {
         flex-wrap: nowrap;
         white-space: nowrap;
     }
+    
     #header-nav-links li a {
         margin-left: 10px;
         font-size: 110%;
     }
-    .section-heading {
-        width: 200px;
-        border-right: 3px solid var(--dark);
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        /* grid-template-rows: repeat(5, 1fr); */
+        grid-template-rows: repeat(3, 4fr) 1fr 1fr;
     }
+
+    #about-me{
+        grid-column: 1/2 ;
+        grid-row: 1/2;
+    }
+
+    #about-me-text{
+        grid-column: 2/3 ;
+        grid-row: 1/2; 
+    }
+
+    #work{
+        grid-column: 1/2 ;
+        grid-row: 2/5; 
+    }
+
     #work-grid {
-        flex-grow: 1;
-        flex-basis: 100%;
+        grid-column: 2/3 ;
+        grid-row: 2/6; 
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(4, 200px);
+        /* grid-template-rows: repeat(4, max(200px, 1fr)); */
         gap: 2%;
     }
-    
-    /* make this card the largest and on top */
+/* make this card the largest and on top */
     a[href*="landing-page"] {
         grid-column: 1 / -1;
         grid-row: 1 / 3;
     }
+    
+
+    #contact-me {
+        grid-column: 1/2 ;
+        grid-row: 5/6;
+    }
+
+    #contact-me-links{
+        grid-column: 2/3 ;
+        grid-row: 5/6;
+    }
+    
+    #about-me,
+    #work,
+    #contact-me  {
+        justify-self: right;
+        padding-right: 10%;
+
+    }
+
+    
 
     #contact-me-links a {
         font-size: 130%;
         margin-right: 30px;
+    }    
+    
+    .section-heading {
+        border-right: 3px solid var(--dark);
     }
 }
